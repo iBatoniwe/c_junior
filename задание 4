@@ -46,6 +46,7 @@ namespace ConsoleApp3
             if (result.ToLower() == "нет")
             { Console.WriteLine("Значит, вы сказали нам что-то не то, ведь мы записывали все ваши ответы.."); }
             else { Console.WriteLine("Вы должны ответить да или нет. Ответ не учитывается. Всего доброго"); }
+            Cosole.ReadKey();
 
 
         }
