@@ -18,16 +18,16 @@ namespace ConsoleApp3
             int hour = 60;
             int waitingTime = 10;
             int totalWaitingTime;
-            int totalhoursWaiting;
-            int totalminutesWaiting;
+            int totalHoursWaiting;
+            int totalMinutesWaiting;
 
             Console.Write("Сколько перед вами людей?");
             people = Convert.ToInt32(Console.ReadLine());
             totalWaitingTime = waitingTime * people;
-            totalhoursWaiting = totalWaitingTime / hour;
-            totalminutesWaiting = totalWaitingTime - totalhoursWaiting * hour;
+            totalHoursWaiting = totalWaitingTime / hour;
+            totalMinutesWaiting = totalWaitingTime - totalHoursWaiting * hour;
 
-            Console.WriteLine($"Ваше время ожидания: {totalhoursWaiting} час(а/ов) и {totalminutesWaiting} минут");
+            Console.WriteLine($"Ваше время ожидания: {totalHoursWaiting} час(а/ов) и {totalMinutesWaiting} минут");
             Console.ReadKey();
         }
     }
