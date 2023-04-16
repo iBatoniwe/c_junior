@@ -16,7 +16,6 @@ namespace ConsoleApp3
         { 
             string name = "Хинкалин";
             string surname = "Иван";
-
             Console.WriteLine($"name1: {name}; surname1: {surname}");
 
             (name, surname) = (surname, name);
@@ -24,7 +23,6 @@ namespace ConsoleApp3
             Console.ReadKey();
         }
     }
-
 }
  
 
