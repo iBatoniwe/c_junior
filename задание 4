@@ -48,7 +48,6 @@ namespace ConsoleApp3
             Console.ReadKey();
         }
     }
-
 }
  
 
