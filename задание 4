@@ -38,18 +38,18 @@ namespace ConsoleApp3
             string answerNo = "нет";
 
             if (result.ToLower() == answerYes)
-            { 
-                Console.WriteLine("Отлично, мы рады, что поняли вас!"); 
+            {
+                Console.WriteLine("Отлично, мы рады, что поняли вас!");
+            }
+            else if (result.ToLower() == answerNo)
+            {
+                Console.WriteLine("Значит, вы сказали нам что-то не то, ведь мы записывали все ваши ответы..");
             }
             else
-            if (result.ToLower() == answerNo)
-            { 
-                Console.WriteLine("Значит, вы сказали нам что-то не то, ведь мы записывали все ваши ответы.."); 
+            {
+                Console.WriteLine("Вы должны ответить да или нет. Ответ не учитывается. Всего доброго");
             }
-            else 
-            { 
-                Console.WriteLine("Вы должны ответить да или нет. Ответ не учитывается. Всего доброго"); 
-            }
+
             Console.ReadKey();
         }
     }
