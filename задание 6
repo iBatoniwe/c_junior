@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Globalization;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+
+namespace ConsoleApp3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        { // + -  * / %
+
+            int allPictures = 52;
+            int rangePictures = 3;
+            int totalRange = allPictures / rangePictures;
+            int restPictures = allPictures - totalRange * rangePictures;
+
+            Console.WriteLine($"полностью заполненные ряды: {totalRange}");
+            Console.WriteLine($"остаток картинок: {restPictures}");
+            Console.ReadKey();
+        }
+    }
+
+}
+ 
+
