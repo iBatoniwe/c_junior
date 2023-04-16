@@ -6,46 +6,51 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
-
 namespace ConsoleApp3
 {
     internal class Program
     {
         static void Main(string[] args)
-        { 
-                Console.WriteLine("Здравствуйте, как вас зовут?");
-                string name = Console.ReadLine();
+        {
+            Console.WriteLine("Здравствуйте, как вас зовут?");
+            string name = Console.ReadLine();
 
-                Console.WriteLine("Сколько вам лет?");
-                int age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Сколько вам лет?");
+            int age = Convert.ToInt32(Console.ReadLine());
 
-                Console.WriteLine("Какой у вас рост?");
-                object height = Console.ReadLine();
+            Console.WriteLine("Какой у вас рост?");
+            object height = Console.ReadLine();
 
-                Console.WriteLine("Какой у вас вес?");
-                object weight = Console.ReadLine();
+            Console.WriteLine("Какой у вас вес?");
+            object weight = Console.ReadLine();
 
-                Console.WriteLine("Кто вы по профессии?");
-                string work = Console.ReadLine();
+            Console.WriteLine("Кто вы по профессии?");
+            string work = Console.ReadLine();
 
-                Console.WriteLine("Сколько вы зарабатываете?");
-                string salary = Console.ReadLine();
+            Console.WriteLine("Сколько вы зарабатываете?");
+            string salary = Console.ReadLine();
 
-                Console.WriteLine($"Вас зовут {name}, вам {age} лет, ваш рост - {height}, " +
-                                  $"ваш вес - {weight}, вы работаете {work}ом и зарабатываете {salary}: " +
-                                  $"Верно? \nОтветьте: да или нет.");
-                string result = Console.ReadLine();
+            Console.WriteLine($"Вас зовут {name}, вам {age} лет, ваш рост - {height}, " +
+                              $"ваш вес - {weight}, вы работаете {work}ом и зарабатываете {salary}: " +
+                              $"Верно? \nОтветьте: да или нет.");
+            string result = Console.ReadLine();
+            string answerYes = "да";
+            string answerNo = "нет";
 
-                if (result.ToLower() == "да")
-                { Console.WriteLine("Отлично, мы рады, что поняли вас!"); }
-                else
-                if (result.ToLower() == "нет")
-                { Console.WriteLine("Значит, вы сказали нам что-то не то, ведь мы записывали все ваши ответы.."); }
-                else { Console.WriteLine("Вы должны ответить да или нет. Ответ не учитывается. Всего доброго"); }
-                Console.ReadKey();
+            if (result.ToLower() == answerYes)
+            { 
+                Console.WriteLine("Отлично, мы рады, что поняли вас!"); 
+            }
+            else
+            if (result.ToLower() == answerNo)
+            { 
+                Console.WriteLine("Значит, вы сказали нам что-то не то, ведь мы записывали все ваши ответы.."); 
+            }
+            else 
+            { 
+                Console.WriteLine("Вы должны ответить да или нет. Ответ не учитывается. Всего доброго"); 
+            }
+            Console.ReadKey();
         }
     }
 }
- 
-
