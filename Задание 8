@@ -14,7 +14,6 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
-
             int people;
             int hour = 60;
             int waitingTime = 10;
@@ -28,10 +27,8 @@ namespace ConsoleApp3
             totalhoursWaiting = totalWaitingTime / hour;
             totalminutesWaiting = totalWaitingTime - totalhoursWaiting * hour;
 
-            Console.WriteLine($"Ваше время ожидания: {totalhoursWaiting} час(ов) и {totalminutesWaiting} минут");
+            Console.WriteLine($"Ваше время ожидания: {totalhoursWaiting} час(а/ов) и {totalminutesWaiting} минут");
             Console.ReadKey();
-
         }
     }
-
 }
