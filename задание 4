@@ -35,7 +35,6 @@ namespace ConsoleApp3
                 Console.WriteLine($"Вас зовут {name}, вам {age} лет, ваш рост - {height}, " +
                                   $"ваш вес - {weight}, вы работаете {work}ом и зарабатываете {salary}: " +
                                   $"Верно? \nОтветьте: да или нет.");
-
                 string result = Console.ReadLine();
 
                 if (result.ToLower() == "да")
