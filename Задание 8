@@ -6,8 +6,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
-
 namespace ConsoleApp3
 {
     internal class Program
@@ -15,19 +13,35 @@ namespace ConsoleApp3
         static void Main(string[] args)
         {
             int people;
-            int hour = 60;
+            int minInHour = 60;
             int waitingTime = 10;
             int totalWaitingTime;
             int totalHoursWaiting;
             int totalMinutesWaiting;
 
-            Console.Write("Сколько перед вами людей?");
+            Console.Write("Сколько перед вами людей? ");
             people = Convert.ToInt32(Console.ReadLine());
             totalWaitingTime = waitingTime * people;
-            totalHoursWaiting = totalWaitingTime / hour;
-            totalMinutesWaiting = totalWaitingTime - totalHoursWaiting * hour;
+            totalHoursWaiting = totalWaitingTime / minInHour;
+            totalMinutesWaiting = totalWaitingTime % minInHour;
 
-            Console.WriteLine($"Ваше время ожидания: {totalHoursWaiting} час(а/ов) и {totalMinutesWaiting} минут");
+            if (totalHoursWaiting < 1)
+            {
+                Console.WriteLine($"Ваше время ожидания: {totalHoursWaiting} часов и {totalMinutesWaiting} минут");
+            }
+            else if (totalHoursWaiting > 1 && totalHoursWaiting < 5)
+            {
+                Console.WriteLine($"Ваше время ожидания: {totalHoursWaiting} часа и {totalMinutesWaiting} минут");
+            }
+            else if (totalHoursWaiting > 5)
+            {
+                Console.WriteLine($"Ваше время ожидания: {totalHoursWaiting} часов и {totalMinutesWaiting} минут");
+            }
+            else
+            {
+                Console.WriteLine($"Ваше время ожидания: {totalHoursWaiting} час и {totalMinutesWaiting} минут");
+            }
+
             Console.ReadKey();
         }
     }
