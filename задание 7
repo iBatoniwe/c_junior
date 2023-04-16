@@ -14,7 +14,6 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         { 
-
             int gold;
             int crystallCoast = 20;
 
@@ -25,8 +24,6 @@ namespace ConsoleApp3
             gold -= crystallCoast * crystallQuantity;
             Console.WriteLine($"У вас осталось {gold} золота и {crystallQuantity} кристаллов.");
             Console.ReadKey();
-
         }
     }
-
 }
