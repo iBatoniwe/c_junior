@@ -18,7 +18,7 @@ namespace ConsoleApp3
             float height;
             decimal time;
             double capacity;
-            bool can;
+            bool canCut;
             short location;
             long money;
             ulong distance;
