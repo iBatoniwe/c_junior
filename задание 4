@@ -13,7 +13,7 @@ namespace ConsoleApp3
     internal class Program
     {
         static void Main(string[] args)
-        { // + -  * / %
+        { 
 
             Console.WriteLine("Здравствуйте, как вас зовут?");
             string name = Console.ReadLine();
@@ -32,16 +32,6 @@ namespace ConsoleApp3
 
             Console.WriteLine("Сколько вы зарабатываете?");
             string salary = Console.ReadLine();
-
-            // Console.WriteLine("Есть ли у вас домшний питомец?");
-            // bool pet = Convert.ToBoolean(Console.ReadLine());
-
-            // if (pet == true)
-            // { Console.WriteLine("Как его зовут?"); 
-            //   string pet1 = Console.ReadLine();
-            // }
-            // else Console.WriteLine("Понятно, очень жаль");
-
 
             Console.WriteLine($"Вас зовут {name}, вам {age} лет, ваш рост - {height}, " +
                               $"ваш вес - {weight}, вы работаете {work}ом и зарабатываете {salary}: " +
