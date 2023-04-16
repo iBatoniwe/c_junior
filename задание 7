@@ -6,23 +6,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
-
 namespace ConsoleApp3
 {
     internal class Program
     {
         static void Main(string[] args)
-        { 
+        {
             int gold;
-            int crystallCoast = 20;
+            int crystalCoast = 20;
 
-            Console.Write("Укажите количество вашего золота:");
+            Console.Write("Укажите количество вашего золота: ");
             gold = Convert.ToInt32(Console.ReadLine());
-            Console.Write($"Сегодня стоимость одного кристалла - {crystallCoast}. Сколько желаете приобрести?");
-            int crystallQuantity = Convert.ToInt32(Console.ReadLine());
-            gold -= crystallCoast * crystallQuantity;
-            Console.WriteLine($"У вас осталось {gold} золота и {crystallQuantity} кристаллов.");
+            Console.Write($"Сегодня стоимость одного кристалла - {crystalCoast}. Сколько желаете приобрести? ");
+            int crystalsQuantity = Convert.ToInt32(Console.ReadLine());
+            gold -= crystalCoast * crystalsQuantity;
+
+            if (crystalsQuantity > 1 || crystalsQuantity < 5)
+            {
+                Console.WriteLine($"У вас осталось {gold} золота и {crystalsQuantity} кристалла");
+            }
+            else if (crystalsQuantity > 5)
+            {
+                Console.WriteLine($"У вас осталось {gold} золота и {crystalsQuantity} кристаллов");
+            }
+            else
+            {
+                Console.WriteLine($"У вас осталось {gold} золота и {crystalsQuantity} кристал");
+            }
+
             Console.ReadKey();
         }
     }
