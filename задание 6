@@ -13,7 +13,7 @@ namespace ConsoleApp3
     internal class Program
     {
         static void Main(string[] args)
-        { // + -  * / %
+        { 
 
             int allPictures = 52;
             int rangePictures = 3;
