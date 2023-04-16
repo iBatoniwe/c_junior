@@ -25,15 +25,18 @@ namespace ConsoleApp3
             totalHoursWaiting = totalWaitingTime / minInHour;
             totalMinutesWaiting = totalWaitingTime % minInHour;
 
-            if (totalHoursWaiting < 1)
+            int firstEndingCheck = 1;
+            int twoEndingCheck = 5;
+
+            if (totalHoursWaiting < firstEndingCheck)
             {
                 Console.WriteLine($"Ваше время ожидания: {totalHoursWaiting} часов и {totalMinutesWaiting} минут");
             }
-            else if (totalHoursWaiting > 1 && totalHoursWaiting < 5)
+            else if (totalHoursWaiting > firstEndingCheck && totalHoursWaiting < twoEndingCheck)
             {
                 Console.WriteLine($"Ваше время ожидания: {totalHoursWaiting} часа и {totalMinutesWaiting} минут");
             }
-            else if (totalHoursWaiting > 5)
+            else if (totalHoursWaiting > twoEndingCheck)
             {
                 Console.WriteLine($"Ваше время ожидания: {totalHoursWaiting} часов и {totalMinutesWaiting} минут");
             }
