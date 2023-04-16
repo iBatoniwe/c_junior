@@ -1,0 +1,66 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Globalization;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+
+namespace ConsoleApp3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        { // + -  * / %
+
+            Console.WriteLine("Здравствуйте, как вас зовут?");
+            string name = Console.ReadLine();
+
+            Console.WriteLine("Сколько вам лет?");
+            int age = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Какой у вас рост?");
+            object height = Console.ReadLine();
+
+            Console.WriteLine("Какой у вас вес?");
+            object weight = Console.ReadLine();
+
+            Console.WriteLine("Кто вы по профессии?");
+            string work = Console.ReadLine();
+
+            Console.WriteLine("Сколько вы зарабатываете?");
+            string salary = Console.ReadLine();
+
+            // Console.WriteLine("Есть ли у вас домшний питомец?");
+            // bool pet = Convert.ToBoolean(Console.ReadLine());
+
+            // if (pet == true)
+            // { Console.WriteLine("Как его зовут?"); 
+            //   string pet1 = Console.ReadLine();
+            // }
+            // else Console.WriteLine("Понятно, очень жаль");
+
+
+            Console.WriteLine($"Вас зовут {name}, вам {age} лет, ваш рост - {height}, " +
+                              $"ваш вес - {weight}, вы работаете {work}ом и зарабатываете {salary}: " +
+                              $"Верно? \nОтветьте: да или нет.");
+
+            string result = Console.ReadLine();
+            bool answer;
+
+            if (result.ToLower() == "да")
+            { Console.WriteLine("Отлично, мы рады, что поняли вас!"); }
+            else
+            if (result.ToLower() == "нет")
+            { Console.WriteLine("Значит, вы сказали нам что-то не то, ведь мы записывали все ваши ответы.."); }
+            else { Console.WriteLine("Вы должны ответить да или нет. Ответ не учитывается. Всего доброго"); }
+
+
+        }
+    }
+
+}
+ 
+
