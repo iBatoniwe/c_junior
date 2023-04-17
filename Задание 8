@@ -13,7 +13,7 @@ namespace ConsoleApp3
         static void Main(string[] args)
         {
             int people;
-            int minInHour = 60;
+            int minutesInHour = 60;
             int waitingTime = 10;
             int totalWaitingTime;
             int totalHoursWaiting;
@@ -22,8 +22,8 @@ namespace ConsoleApp3
             Console.Write("Сколько перед вами людей? ");
             people = Convert.ToInt32(Console.ReadLine());
             totalWaitingTime = waitingTime * people;
-            totalHoursWaiting = totalWaitingTime / minInHour;
-            totalMinutesWaiting = totalWaitingTime % minInHour;
+            totalHoursWaiting = totalWaitingTime / minutesInHour;
+            totalMinutesWaiting = totalWaitingTime % minutesInHour;
 
             int firstEndingCheck = 1;
             int twoEndingCheck = 5;
